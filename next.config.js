@@ -5,14 +5,14 @@
 const debug = process.env.NODE_ENV !== "production";
 const path = require('path')
 module.exports = {
-  exportPathMap: function () {
+  exportPathMap: function (  defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }) {
     return {
-      "/": { page: "/" },
-      "/about": { page: "/about" }
+      '/': { page: '/home' },
     }
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/next-gh-page-example/' : '',
+  assetPrefix: !debug ? '/NRS (vivek)/' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');

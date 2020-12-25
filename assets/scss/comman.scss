@@ -1,0 +1,60 @@
+@import './abstracts/abstracts-dir.scss';
+//
+// :button:input:check-box:search-box:table:cursor:container:sidebar:modal:cards:tabs:typography:text //
+
+
+
+.material-icons{
+  vertical-align: middle;
+}
+
+.masthead {
+  background-image: url('/img/product/chickenBG.jpg');
+  background-color:transparent !important;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  background: #ffffff;
+}
+.navbar.navbar-shrink{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #2c3e50;
+}
+.navbar-brand {
+  color: #2c3e50 !important;
+}
+.banner-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 992px){
+  #mainNav {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+  }
+}
+
+.product-carousel .card .card-img-top{
+  max-height: 175px;
+}
+.product-carousel .owl-stage{
+  margin-bottom: 15px;
+}
+.product-carousel  .owl-nav button span{
+font-size: 37px;
+}
+.product-carousel  .owl-nav button{
+ width: 50px;
+ height: 50px;
+ color: #ffffff !important;
+ background-color: #1abc9c !important;
+ border-color: #1abc9c !important;
+ border-radius: 50% !important;
+  }
