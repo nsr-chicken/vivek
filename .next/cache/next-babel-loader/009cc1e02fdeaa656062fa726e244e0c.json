@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport Link from 'next/link';\nexport default (function () {\n  return __jsx(\"div\", null, \"Hello World.sss \", __jsx(Link, {\n    href: \"/about\",\n    as: \"/next-gh-page-examplecls/about\"\n  }, __jsx(\"a\", null, \"About\")));\n});","map":null,"metadata":{},"sourceType":"module"}
