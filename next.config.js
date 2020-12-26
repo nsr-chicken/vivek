@@ -12,7 +12,7 @@ module.exports = {
     }
   },
   //assetPrefix: '',
-  assetPrefix: !debug ? '/NRS (vivek)/' : '',
+  assetPrefix: !debug ? '/vivek/' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
