@@ -11,9 +11,8 @@ module.exports = {
       '/': { page: '/home' },
     }
   },
-  basePath:'/vivek',
   //assetPrefix: '',
-  assetPrefix: !debug ? '/vivek' : '',
+  assetPrefix: !debug ? '/NRS (vivek)/' : '',
   webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
