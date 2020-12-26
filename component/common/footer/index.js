@@ -30,9 +30,9 @@ export function Footer() {
         </div>
       </footer>
       {/* //  <!-- Copyright Section--> */}
-      <section class="copyright py-4 text-center text-white">
+      <div class="copyright py-4 text-center text-white">
         <div class="container"><small>Copyright © NRS 2020</small></div>
-      </section>
+      </div>
     </>
   )
 }
