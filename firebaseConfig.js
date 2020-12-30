@@ -19,6 +19,6 @@ if (!firebase.apps.length) {
     firebase.app()
 }
 //  export const auth = app.auth();
-export const storage = firebase.storage().ref();
+// export const storage = firebase.storage().ref();
 export const db = firebase.firestore();
 //  export default app

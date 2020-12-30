@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Mainlayout from '../../layout/mainlayout'
 import { Banner, Product, About, ContactUs } from '../../component/pages'
-import { db } from "./firebaseConfig";
+import { db } from "../../firebaseConfig";
 import { Toast } from "../../service/toast";
 export default class Home extends React.Component {
 
