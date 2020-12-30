@@ -24,12 +24,12 @@ export class Product extends React.Component {
             rebuildOnUpdate: true,
             // centeredSlides: true,
 
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
             freeMode: true,
             pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
+                el: '.swiper-pagination',
+                clickable: true,
             },
             // renderPrevButton: () => <span className="swiper-button-prev"><img src="./static/images/icons/arrow_forward-24px.svg"></img></span>,
             // renderNextButton: () => <span className="swiper-button-next"><img src="./static/images/icons/arrow_back-24px.svg"></img></span>,
@@ -52,10 +52,10 @@ export class Product extends React.Component {
                 },
             }
         }
-
+        let { productList, productLoder } = this.props;
         return (
             // <!-- Portfolio Section-->
-            <section class="page-section portfolio" id="product">
+            <section class="page-section portfolio product-page" id="product">
                 <div class="container-fluid">
                     {/* <!-- Portfolio Section Heading--> */}
                     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Product</h2>
@@ -70,20 +70,38 @@ export class Product extends React.Component {
                     {/* <!-- Portfolio Grid Items--> */}
 
                     <div class="row pr-5 pl-5">
-                        <Swiper {...params}>
-                            {['chicken', 'egg', 'duck', 'quail', 'goat'].map((data, i) => (
-                                <div class="item col-md-4 ">
-                                    <div class="card border-0 shadow mb-5">
-                                        <img class="card-img-top" src="/img/product/chicken.png" alt="Card image cap" />
-                                        <div class="card-body">
-                                            <h5 class="card-title">Country Chicken</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                            {/* <!-- <a href="#" class="btn btn-primary">Go somewhere</a> --> */}
+                        {productLoder && [1, 2, 3, 4].map((data, i) =>
+
+                            <div className="col-md-3 ">
+                                <div className={`card mb-4 `} >
+                                    <div className="card-img-top" style={{ height: '250px' }}>
+                                        <div className="align-items-center h-100 d-flex justify-content-center">
+                                            <div class="lds-ripple"><div></div><div></div></div>
                                         </div>
                                     </div>
+                                    <div className="card-body" style={{ height: '221px' }}>
+                                        <div className="ph-loader ph-19h mb-3 w-50"></div>
+                                        <div className="ph-loader ph-5h w-25"></div>
+                                    </div>
                                 </div>
-                            ))}
+                            </div>)}
+                        <Swiper {...params}>
+                            {!productLoder && productList.map(({ distribution, Image, Price, saleType, name,active }, i) =>
+                            
+                          
+                                        <div className="item">
+                                            <div className="card border-0 shadow mb-5">
+                                                <img className="card-img-top" src={Image} alt="Card image cap" />
+                                                <div class="card-body">
+                                                    <h5 class="card-title">{name}</h5>
+                                                    <p class="card-text">{distribution}</p>
+                                                    <h5 className="text-right">1{saleType} {Price} ₹</h5>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                  
+                               
+  )}
                         </Swiper>
 
                     </div>

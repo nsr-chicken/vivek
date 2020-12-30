@@ -6,7 +6,7 @@ import React from "react";
 export class About extends React.Component {
     render() {
 
-
+        let {about} = this.props;
         return (
             // <!-- About Section-->
             <section class="page-section bg-primary text-white mb-0" id="about">
@@ -22,9 +22,7 @@ export class About extends React.Component {
                     {/* <!-- About Section Content--> */}
                     <div class="row">
                         <div class="col ml-auto">
-                            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
-                                includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
-                                stylesheets for easy customization.</p>
+                            <p class="lead">{about.text}</p>
                         </div>
                         {/* <div class="col-lg-4 mr-auto">
                             <p class="lead">You can create your own custom avatar for the masthead, change the icon in the

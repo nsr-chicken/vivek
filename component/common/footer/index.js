@@ -8,7 +8,7 @@ export function Footer() {
             {/* <!-- Footer Location--> */}
             <div class="col-lg-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Location</h4>
-              <p class="lead mb-0">Solingar Road Nethaji Nagar Arakkonam Near Yamaha store room<br /> +91 84896 51082</p>
+              <p class="lead mb-0">Sholinghur Road Nethaji Nagar Arakkonam Near Yamaha show room <br /> +91 84896 51082</p>
             </div>
             {/* <!-- Footer Social Icons--> */}
             <div class="col-lg-4 mb-5 mb-lg-0">
@@ -21,11 +21,11 @@ export function Footer() {
                         href="#"><i class="fab fa-fw fa-dribbble"></i></a>
             </div>
             {/* <!-- Footer About Text--> */}
-            <div class="col-lg-4">
+            {/* <div class="col-lg-4">
               <h4 class="text-uppercase mb-4">About Freelancer</h4>
               <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by <a
                 href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

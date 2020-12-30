@@ -6,7 +6,7 @@ const routes = require("./routes");
 
 const port = parseInt(process.env.PORT, 10) || 2005;
 const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev: false });
+const app = next({ dev: true });
 const handle = routes.getRequestHandler(app);
 
 app.prepare().then((r) => {

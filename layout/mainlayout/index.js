@@ -1,9 +1,9 @@
 import React from "react";
 
 
-import {Header,Footer} from '../../component/common'
+import { Header, Footer } from '../../component/common'
 
-
+// import './mainlayout.scss';
 
 class MainLayout extends React.Component {
 
@@ -11,15 +11,17 @@ class MainLayout extends React.Component {
 
   render() {
     let { } = this.state
-    let { children } = this.props
+    let { children,headerLoder } = this.props
 
     return (
       <>
         <Header />
-        <body id="page-top">
-        {children}
-        </body>
-        <Footer />
+        {!headerLoder?
+        <div class="progress-line header-progress"></div>:''}
+          {headerLoder?  <body id="page-top">
+          {children}
+        </body>:''}
+        {headerLoder? <Footer />:''}
       </>
     )
   }
